@@ -1,0 +1,14 @@
+# Visual Studio Community, Code and other VS
+
+build/
+
+# Visual Studio Community
+
+out/
+x64/
+x86/
+.vs/
+*.vcxproj.user
+
+# Visual Studio Code
+.vscode/
