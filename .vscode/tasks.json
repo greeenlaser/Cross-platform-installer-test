@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run build script (Windows)",
+            "type": "shell",
+
+            "command": "${workspaceFolder}/build.bat n",
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/c"]
+                }
+            },
+
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"],
+            "detail": "Run the build script to configure and run the project"
+        },
+        {
+            "label": "Run build script (Linux)",
+            "type": "shell",
+
+            "command": "${workspaceFolder}/build.sh n",
+            "options": {
+                "shell": {
+                    "executable": "/bin/bash",
+                    "args": ["-c"]
+                }
+            },
+
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Run the build script to configure and run the project"
+        }
+    ]
+}

@@ -9,6 +9,3 @@ x64/
 x86/
 .vs/
 *.vcxproj.user
-
-# Visual Studio Code
-.vscode/
